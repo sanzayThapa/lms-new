@@ -2,74 +2,85 @@ import React from 'react';
 
 const features = [
     {
-        name: 'Corporate Compliance',
-        description: 'Ensure your employees meet industry standards with automated tracking and reporting.',
-        icon: (
-            <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.744c0 1.5.397 2.898 1.05 4.104l.43.834a3.75 3.75 0 003.352 1.832h6.336a3.75 3.75 0 003.352-1.832l.43-.834a11.947 11.947 0 001.05-4.104c0-1.303-.204-2.559-.598-3.744A11.959 11.959 0 0112 2.714z" />
-            </svg>
-        ),
-    },
-    {
-        name: 'Skill Assessments',
-        description: 'Benchmark employee skills with interactive quizzes and real-time performance feedback.',
-        icon: (
-            <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25" />
-            </svg>
-        ),
+        name: 'Custom Learning Paths',
+        description: 'Tailored training programs designed to meet your organization specific needs.',
+        icon: '🎯',
+        color: 'bg-brand-100 text-brand-600',
     },
     {
         name: 'Progress Analytics',
-        description: 'Comprehensive dashboards for HR and managers to visualize team advancement.',
-        icon: (
-            <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-            </svg>
-        ),
+        description: 'Comprehensive dashboards to track employee progress and ROI on training.',
+        icon: '📊',
+        color: 'bg-purple-100 text-purple-600',
+    },
+    {
+        name: 'Local Content',
+        description: 'Courses tailored for Nepali businesses and compliance requirements.',
+        icon: '🇳🇵',
+        color: 'bg-orange-100 text-orange-600',
+    },
+    {
+        name: 'Scalable Platform',
+        description: 'Train hundreds or thousands of employees across Nepal seamlessly.',
+        icon: '📈',
+        color: 'bg-green-100 text-green-600',
+    },
+    {
+        name: 'Expert Support',
+        description: 'Dedicated support team based in Nepal for local assistance.',
+        icon: '👥',
+        color: 'bg-pink-100 text-pink-600',
+    },
+    {
+        name: 'Easy Integration',
+        description: 'Seamlessly integrates with your existing HR systems.',
+        icon: '🔗',
+        color: 'bg-blue-100 text-blue-600',
     },
 ];
 
 const Features = () => {
     return (
-        <section className="bg-white py-32 relative">
-            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-3xl lg:text-center">
-                    <h2 className="text-base font-bold leading-7 text-skillBlue uppercase tracking-widest">Enterprise solutions</h2>
-                    <p className="mt-4 text-4xl font-extrabold tracking-tight text-darkNavy sm:text-5xl">
-                        Unleash the potential of your <br /> corporate workforce
-                    </p>
-                    <p className="mt-6 text-xl leading-8 text-slate-600 max-w-2xl mx-auto">
-                        We provide high-impact training and management tools that drive measurable results for businesses in Nepal.
+        <section className="py-20 bg-white relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-brand-50 rounded-full blur-3xl opacity-50"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-50 rounded-full blur-3xl opacity-50"></div>
+
+            <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+                <div className="text-center max-w-3xl mx-auto mb-14">
+                    <span className="inline-block px-3 py-1 rounded-md bg-brand-100 text-brand-600 text-sm font-semibold mb-3">
+                        Why SkillBest Nepal
+                    </span>
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+                        Nepal's Leading Corporate{' '}
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-purple-600">
+                            Training Platform
+                        </span>
+                    </h2>
+                    <p className="mt-3 text-base text-gray-600">
+                        Trusted by 200+ Nepali companies for employee development.
                     </p>
                 </div>
-                <div className="mx-auto mt-20 max-w-2xl sm:mt-24 lg:mt-32 lg:max-w-none">
-                    <dl className="grid max-w-xl grid-cols-1 gap-x-10 gap-y-12 lg:max-w-none lg:grid-cols-3">
-                        {features.map((feature) => (
-                            <div key={feature.name} className="flex flex-col items-start p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 transition-all duration-300 hover:shadow-[0_20px_40px_-10px_rgba(30,115,190,0.1)] hover:-translate-y-2 group">
-                                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-skillBlue to-blue-700 shadow-lg shadow-skillBlue/20 mb-8 transform group-hover:rotate-6 transition-transform">
-                                    <div className="text-white">
-                                        {feature.icon}
-                                    </div>
-                                </div>
-                                <dt className="text-2xl font-bold leading-7 text-darkNavy">
-                                    {feature.name}
-                                </dt>
-                                <dd className="mt-4 flex flex-auto flex-col text-lg leading-7 text-slate-600 font-light">
-                                    <p className="flex-auto">{feature.description}</p>
-                                    <p className="mt-6">
-                                        <a href="#" className="text-sm font-bold leading-6 text-skillBlue flex items-center group-hover:text-skillRed transition-colors">
-                                            Learn more <span className="ml-1 transform group-hover:translate-x-1 transition-transform">→</span>
-                                        </a>
-                                    </p>
-                                </dd>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {features.map((feature, index) => (
+                        <div
+                            key={feature.name}
+                            className="group relative bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-brand-200"
+                        >
+                            <div className={`w-12 h-12 ${feature.color} rounded-lg flex items-center justify-center text-2xl mb-4`}>
+                                {feature.icon}
                             </div>
-                        ))}
-                    </dl>
+
+                            <h3 className="text-lg font-bold text-gray-900 mb-2">
+                                {feature.name}
+                            </h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                                {feature.description}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
-            <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
         </section>
     );
 };

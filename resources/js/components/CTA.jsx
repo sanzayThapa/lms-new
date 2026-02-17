@@ -2,34 +2,49 @@ import React from 'react';
 
 const CTA = () => {
     return (
-        <section className="bg-white py-24 sm:py-32">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="relative isolate overflow-hidden bg-darkNavy px-6 py-24 shadow-2xl rounded-[3rem] sm:px-24 xl:py-32">
-                    <div className="mx-auto max-w-3xl text-center">
-                        <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl mb-8 leading-[1.1]">
-                            Ready to Transform <br />
-                            <span className="text-skillRed italic">Your Workforce?</span>
-                        </h2>
-                        <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-slate-300">
-                            Join 100+ organizations already empowering their teams with SkillBest.
-                            Let's build a custom training plan for your company.
-                        </p>
-                        <div className="mt-12 flex items-center justify-center">
-                            <a
-                                href="/instructor/register"
-                                className="flex items-center gap-2 rounded-xl bg-skillBlue px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-blue-600 transition-all transform hover:-translate-y-1"
-                            >
-                                Schedule a Consultation
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+        <section className="py-14 bg-gray-900 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800"></div>
+            <div className="absolute inset-0 opacity-10">
+                <div className="absolute inset-0" style={{
+                    backgroundImage: `radial-gradient(circle at 25px 25px, white 2%, transparent 0%), radial-gradient(circle at 75px 75px, white 2%, transparent 0%)`,
+                    backgroundSize: '100px 100px'
+                }}></div>
+            </div>
 
-                    {/* Decorative elements */}
-                    <div className="absolute -top-24 -left-24 h-96 w-96 bg-skillBlue/10 rounded-full blur-3xl opacity-50"></div>
-                    <div className="absolute -bottom-24 -right-24 h-96 w-96 bg-skillRed/10 rounded-full blur-3xl opacity-50"></div>
+            <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-semibold mb-6">
+                    <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    Start Your Journey Today
+                </div>
+
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+                    Transform Your Workforce with{' '}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-cyan-400">
+                        SkillBest Nepal
+                    </span>
+                </h2>
+
+                <p className="text-base text-gray-400 leading-relaxed mb-6 max-w-2xl mx-auto">
+                    Join 200+ Nepali companies already empowering their teams.
+                    Get a free consultation for your organization.
+                </p>
+
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <a
+                        href="/register"
+                        className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-brand-600 text-white font-medium text-sm hover:bg-brand-700 transition-all"
+                    >
+                        Get Started Free
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </a>
+                    <a
+                        href="/courses"
+                        className="inline-flex items-center justify-center gap-2 px-5 py-2.5 border border-gray-600 text-white font-medium text-sm hover:bg-gray-800 transition-all"
+                    >
+                        Contact Us
+                    </a>
                 </div>
             </div>
         </section>

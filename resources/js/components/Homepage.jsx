@@ -9,11 +9,11 @@ import CTA from './CTA';
 
 const Homepage = ({ courseCategories, allCategories }) => {
     return (
-        <div className="bg-slate-50 min-h-screen">
+        <div className="min-h-screen">
             <Hero />
             <Features />
-            <Courses courseCategories={courseCategories} />
             <Stats />
+            <Courses courseCategories={courseCategories} />
             <Categories allCategories={allCategories} />
             <ClientStories />
             <CTA />

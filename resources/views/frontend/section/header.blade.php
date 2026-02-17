@@ -2,7 +2,7 @@
 $categories = getCategories();
 ?>
 
-<header class="header-menu-area bg-darkNavy text-white">
+<header class="header-menu-area text-white" style="background-color: #0a192f;">
     <div class="header-top pr-150px pl-150px border-bottom border-bottom-gray py-1">
         <div class="container-fluid">
             <div class="row align-items-center">
@@ -83,7 +83,7 @@ $categories = getCategories();
             </div><!-- end row -->
         </div><!-- end container-fluid -->
     </div><!-- end header-top -->
-    <div class="header-menu-content pr-150px pl-150px bg-darkNavy">
+    <div class="header-menu-content pr-150px pl-150px" style="background-color: #0a192f;">
         <div class="container-fluid">
             <div class="main-menu-content">
                 <a href="#" class="down-button"><i class="la la-angle-down"></i></a>

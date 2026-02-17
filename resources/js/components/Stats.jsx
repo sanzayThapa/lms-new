@@ -1,25 +1,26 @@
 import React from 'react';
 
 const stats = [
-    { label: 'Corporate Partners', value: '50+' },
-    { label: 'Employees Trained', value: '10,000+' },
-    { label: 'Course Completion Rate', value: '94%' },
-    { label: 'Satisfaction Score', value: '4.9/5' },
+    { label: 'Nepal Companies', value: '200+', icon: '🏢', color: 'bg-brand-100' },
+    { label: 'Learners', value: '10K+', icon: '👨‍🎓', color: 'bg-purple-100' },
+    { label: 'Courses', value: '500+', icon: '📚', color: 'bg-orange-100' },
+    { label: 'Cities', value: '30+', icon: '🏙️', color: 'bg-green-100' },
 ];
 
 const Stats = () => {
     return (
-        <section className="relative py-24 sm:py-32 overflow-hidden">
-            <div className="absolute inset-0 bg-darkNavy border-y border-slate-800"></div>
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 gap-y-16 text-center lg:grid-cols-4">
+        <section className="py-14 bg-gray-50 relative overflow-hidden">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                     {stats.map((stat) => (
-                        <div key={stat.label} className="mx-auto flex max-w-xs flex-col gap-y-2 group">
-                            <dd className="order-first text-4xl font-extrabold tracking-tight text-white sm:text-6xl group-hover:text-skillRed transition-colors duration-300">
+                        <div key={stat.label} className="text-center">
+                            <div className={`inline-flex items-center justify-center w-14 h-14 ${stat.color} rounded-lg mb-3`}>
+                                <span className="text-2xl">{stat.icon}</span>
+                            </div>
+                            <dd className="text-3xl font-extrabold text-gray-900 mb-1">
                                 {stat.value}
                             </dd>
-                            <dt className="text-sm font-bold uppercase tracking-[0.2em] text-skillBlue">
+                            <dt className="text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 {stat.label}
                             </dt>
                         </div>
