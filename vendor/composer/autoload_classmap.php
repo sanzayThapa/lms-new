@@ -42,6 +42,7 @@ return array(
     'App\\Http\\Controllers\\frontend\\CartController' => $baseDir . '/app/Http/Controllers/frontend/CartController.php',
     'App\\Http\\Controllers\\frontend\\CheckoutController' => $baseDir . '/app/Http/Controllers/frontend/CheckoutController.php',
     'App\\Http\\Controllers\\frontend\\FrontendDashboardController' => $baseDir . '/app/Http/Controllers/frontend/FrontendDashboardController.php',
+    'App\\Http\\Controllers\\frontend\\MyCourseController' => $baseDir . '/app/Http/Controllers/frontend/MyCourseController.php',
     'App\\Http\\Controllers\\frontend\\WishlistController' => $baseDir . '/app/Http/Controllers/frontend/WishlistController.php',
     'App\\Http\\Middleware\\RoleMiddleware' => $baseDir . '/app/Http/Middleware/RoleMiddleware.php',
     'App\\Http\\Requests\\ApplyCouponRequest' => $baseDir . '/app/Http/Requests/ApplyCouponRequest.php',

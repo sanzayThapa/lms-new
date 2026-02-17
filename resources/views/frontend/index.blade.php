@@ -2,13 +2,9 @@
 
 @section('content')
 
-@include('frontend.section.hero')
-
-@include('frontend.section.feature')
-
-@include('frontend.section.category')
-
-@include('frontend.section.course-area-first')
-
+    {{-- React Application Mount Point with Dynamic Data --}}
+    <div id="homepage" data-course-categories="{{ json_encode($course_category) }}"
+        data-categories="{{ json_encode($categories) }}">
+    </div>
 
 @endsection

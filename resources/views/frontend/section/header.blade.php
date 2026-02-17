@@ -1,9 +1,8 @@
-
 <?php
 $categories = getCategories();
 ?>
 
-<header class="header-menu-area bg-white">
+<header class="header-menu-area bg-darkNavy text-white">
     <div class="header-top pr-150px pl-150px border-bottom border-bottom-gray py-1">
         <div class="container-fluid">
             <div class="row align-items-center">
@@ -11,10 +10,11 @@ $categories = getCategories();
                     <div class="header-widget">
                         <ul class="generic-list-item d-flex flex-wrap align-items-center fs-14">
                             <li class="d-flex align-items-center pr-3 mr-3 border-right border-right-gray"><i
-                                    class="la la-phone mr-1"></i><a href="tel:00123456789"> (00) 123 456 789</a>
+                                    class="la la-phone mr-1"></i><a href="tel:00123456789" class="text-white"> (00) 123
+                                    456 789</a>
                             </li>
                             <li class="d-flex align-items-center"><i class="la la-envelope-o mr-1"></i><a
-                                    href="mailto:contact@aduca.com"> contact@aduca.com</a></li>
+                                    href="mailto:contact@aduca.com" class="text-white"> contact@aduca.com</a></li>
                         </ul>
                     </div><!-- end header-widget -->
                 </div><!-- end col-lg-6 -->
@@ -47,9 +47,10 @@ $categories = getCategories();
                             <ul
                                 class="generic-list-item d-flex flex-wrap align-items-center fs-14 border-left border-left-gray pl-3 ml-3">
                                 <li class="d-flex align-items-center pr-3 mr-3 border-right border-right-gray"><i
-                                        class="la la-sign-in mr-1"></i><a href="{{ route('login') }}"> Login</a></li>
+                                        class="la la-sign-in mr-1"></i><a href="{{ route('login') }}" class="text-white">
+                                        Login</a></li>
                                 <li class="d-flex align-items-center"><i class="la la-user mr-1"></i><a
-                                        href="{{ route('register') }}"> Register</a></li>
+                                        href="{{ route('register') }}" class="text-white"> Register</a></li>
                             </ul>
                         @else
                             <ul
@@ -58,15 +59,15 @@ $categories = getCategories();
                                         class="la la-sign-in mr-1"></i>
 
                                     @if (auth()->user()->role == 'user')
-                                        <a href="{{ route('user.dashboard') }}">Dashboard</a>
+                                        <a href="{{ route('user.dashboard') }}" class="text-white">Dashboard</a>
                                     @endif
 
                                     @if (auth()->user()->role == 'admin')
-                                        <a href="{{ route('admin.dashboard') }}">Dashboard</a>
+                                        <a href="{{ route('admin.dashboard') }}" class="text-white">Dashboard</a>
                                     @endif
 
                                     @if (auth()->user()->role == 'instructor')
-                                        <a href="{{ route('instructor.dashboard') }}">Dashboard</a>
+                                        <a href="{{ route('instructor.dashboard') }}" class="text-white">Dashboard</a>
                                     @endif
                                 </li>
 
@@ -82,14 +83,15 @@ $categories = getCategories();
             </div><!-- end row -->
         </div><!-- end container-fluid -->
     </div><!-- end header-top -->
-    <div class="header-menu-content pr-150px pl-150px bg-white">
+    <div class="header-menu-content pr-150px pl-150px bg-darkNavy">
         <div class="container-fluid">
             <div class="main-menu-content">
                 <a href="#" class="down-button"><i class="la la-angle-down"></i></a>
                 <div class="row align-items-center">
                     <div class="col-lg-2">
                         <div class="logo-box">
-                            <a href="{{ route('frontend.home') }}" class="logo"><img src="{{asset('frontend/images/logo.png')}}" alt="logo"></a>
+                            <a href="{{ route('frontend.home') }}" class="logo"><img
+                                    src="{{asset('frontend/images/logo.png')}}" alt="logo"></a>
                             <div class="user-btn-action">
                                 <div class="search-menu-toggle icon-element icon-element-sm shadow-sm mr-2"
                                     data-toggle="tooltip" data-placement="top" title="Search">
@@ -111,20 +113,21 @@ $categories = getCategories();
                             <div class="menu-category">
                                 <ul>
                                     <li>
-                                        <a href="#">Categories <i class="la la-angle-down fs-12"></i></a>
+                                        <a href="#" class="text-white">Categories <i
+                                                class="la la-angle-down fs-12"></i></a>
                                         <ul class="cat-dropdown-menu">
 
                                             @foreach($categories as $item)
-                                            <li>
-                                                <a href="course-grid.html">{{$item->name}} <i
-                                                        class="la la-angle-right"></i></a>
-                                                <ul class="sub-menu">
-                                                    @foreach ($item['subcategory'] as $data)
-                                                    <li><a href="#">{{$data->name}}</a></li>
-                                                    @endforeach
+                                                <li>
+                                                    <a href="course-grid.html">{{$item->name}} <i
+                                                            class="la la-angle-right"></i></a>
+                                                    <ul class="sub-menu">
+                                                        @foreach ($item['subcategory'] as $data)
+                                                            <li><a href="#">{{$data->name}}</a></li>
+                                                        @endforeach
 
-                                                </ul>
-                                            </li>
+                                                    </ul>
+                                                </li>
                                             @endforeach
 
 
@@ -141,22 +144,22 @@ $categories = getCategories();
                                 </div>
                             </form>
                             <nav class="main-menu">
-                                <ul>
+                                <ul class="text-white">
                                     <li>
-                                        <a href="/">Home </a>
+                                        <a href="/" class="text-white">Home </a>
 
                                     </li>
                                     <li>
-                                        <a href="#"">All Courses </a>
+                                        <a href="#" class="text-white">All Courses </a>
 
                                     </li>
                                     <li>
-                                        <a href="{{ route('cart') }}">Cart</a>
+                                        <a href=" {{ route('cart') }}" class="text-white">Cart</a>
 
                                     </li>
 
                                     <li>
-                                        <a href="#">Blog </a>
+                                        <a href="#" class="text-white">Blog </a>
 
                                     </li>
                                 </ul><!-- end ul -->
@@ -164,9 +167,9 @@ $categories = getCategories();
 
 
 
-                             <!-----wishlist start--->
+                            <!-----wishlist start--->
 
-                             <div class="shop-cart mr-4">
+                            <div class="shop-cart mr-4">
                                 <ul>
                                     <li>
                                         <p class="shop-cart-btn d-flex align-items-center">
@@ -178,20 +181,20 @@ $categories = getCategories();
                                             </svg>
 
                                             <?php
-                                            if (auth()->check()) {
-                                                $user_id = auth()->user()->id; // Get the authenticated user's ID
-                                                $wishlist = getWishlist(); // Get wishlist data
-                                                $wishlist_count = \App\Models\Wishlist::where('user_id', $user_id)->count(); // Count wishlist items
-                                            } else {
-                                                // Handle the case when the user is not logged in
-                                                $wishlist = collect(); // Empty collection if not logged in
-                                                $wishlist_count = 0; // No wishlist count if not logged in
-                                            }
+if (auth()->check()) {
+    $user_id = auth()->user()->id; // Get the authenticated user's ID
+    $wishlist = getWishlist(); // Get wishlist data
+    $wishlist_count = \App\Models\Wishlist::where('user_id', $user_id)->count(); // Count wishlist items
+} else {
+    // Handle the case when the user is not logged in
+    $wishlist = collect(); // Empty collection if not logged in
+    $wishlist_count = 0; // No wishlist count if not logged in
+}
                                             ?>
 
 
-                                            <span class="product-count" id="wishlist-count"
-                                                style="margin-left: 5px">{{ $wishlist_count }}</span>
+                                            <span class="product-count" id="wishlist-count" style="margin-left: 5px">{{
+                                                $wishlist_count }}</span>
 
                                         </p>
 
@@ -238,8 +241,8 @@ $categories = getCategories();
 
 
     <div class="off-canvas-menu custom-scrollbar-styled main-off-canvas-menu">
-        <div class="off-canvas-menu-close main-menu-close icon-element icon-element-sm shadow-sm"
-            data-toggle="tooltip" data-placement="left" title="Close menu">
+        <div class="off-canvas-menu-close main-menu-close icon-element icon-element-sm shadow-sm" data-toggle="tooltip"
+            data-placement="left" title="Close menu">
             <i class="la la-times"></i>
         </div><!-- end off-canvas-menu-close -->
         <ul class="generic-list-item off-canvas-menu-list pt-90px">

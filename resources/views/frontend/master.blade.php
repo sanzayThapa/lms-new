@@ -18,6 +18,9 @@
 
     @include('frontend.section.link')
 
+    @viteReactRefresh
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     <!-- end inject -->
 
 </head>

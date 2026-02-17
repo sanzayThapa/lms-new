@@ -359,8 +359,8 @@ class ComposerStaticInit0ac049f086f2bbc8159db99520e53b1d
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -404,8 +404,8 @@ class ComposerStaticInit0ac049f086f2bbc8159db99520e53b1d
         ),
         'League\\Uri\\' => 
         array (
-            0 => __DIR__ . '/..' . '/league/uri-interfaces',
-            1 => __DIR__ . '/..' . '/league/uri',
+            0 => __DIR__ . '/..' . '/league/uri',
+            1 => __DIR__ . '/..' . '/league/uri-interfaces',
         ),
         'League\\OAuth1\\Client\\' => 
         array (
@@ -603,6 +603,7 @@ class ComposerStaticInit0ac049f086f2bbc8159db99520e53b1d
         'App\\Http\\Controllers\\frontend\\CartController' => __DIR__ . '/../..' . '/app/Http/Controllers/frontend/CartController.php',
         'App\\Http\\Controllers\\frontend\\CheckoutController' => __DIR__ . '/../..' . '/app/Http/Controllers/frontend/CheckoutController.php',
         'App\\Http\\Controllers\\frontend\\FrontendDashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/frontend/FrontendDashboardController.php',
+        'App\\Http\\Controllers\\frontend\\MyCourseController' => __DIR__ . '/../..' . '/app/Http/Controllers/frontend/MyCourseController.php',
         'App\\Http\\Controllers\\frontend\\WishlistController' => __DIR__ . '/../..' . '/app/Http/Controllers/frontend/WishlistController.php',
         'App\\Http\\Middleware\\RoleMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/RoleMiddleware.php',
         'App\\Http\\Requests\\ApplyCouponRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ApplyCouponRequest.php',
