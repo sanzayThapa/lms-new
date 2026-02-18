@@ -10,11 +10,12 @@ $categories = getCategories();
                     <div class="header-widget">
                         <ul class="generic-list-item d-flex flex-wrap align-items-center fs-14">
                             <li class="d-flex align-items-center pr-3 mr-3 border-right border-right-gray"><i
-                                    class="la la-phone mr-1"></i><a href="tel:00123456789" class="text-white"> (00) 123
-                                    456 789</a>
+                                    class="la la-phone mr-1"></i><a href="tel:+977015909398" class="text-white">
+                                    +977-01-5909398</a>
                             </li>
                             <li class="d-flex align-items-center"><i class="la la-envelope-o mr-1"></i><a
-                                    href="mailto:contact@aduca.com" class="text-white"> contact@aduca.com</a></li>
+                                    href="mailto:info@skillbest.com.np" class="text-white"> info@skillbest.com.np</a>
+                            </li>
                         </ul>
                     </div><!-- end header-widget -->
                 </div><!-- end col-lg-6 -->
@@ -91,7 +92,7 @@ $categories = getCategories();
                     <div class="col-lg-2">
                         <div class="logo-box">
                             <a href="{{ route('frontend.home') }}" class="logo"><img
-                                    src="{{asset('frontend/images/logo.png')}}" alt="logo"></a>
+                                    src="{{asset('frontend/images/skillbest-logo.png')}}" alt="logo"></a>
                             <div class="user-btn-action">
                                 <div class="search-menu-toggle icon-element icon-element-sm shadow-sm mr-2"
                                     data-toggle="tooltip" data-placement="top" title="Search">
